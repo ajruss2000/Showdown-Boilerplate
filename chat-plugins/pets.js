@@ -833,7 +833,7 @@ exports.commands = {
 
 	givepet: 'spawnpet',
 	spawnpet: function (target, room, user, connection, cmd) {
-		if if (user.userid === "wgc" || user.userid === "digitaledge" || user.userid === "potatocomputer") {
+		if (user.userid === "wgc" || user.userid === "digitaledge" || user.userid === "potatocomputer") {
 		if (!target) return this.errorReply("/givepet [user], [pet ID]");
 		let parts = target.split(",").map(p => toId(p));
 		// find targetUser and the pet being given.
